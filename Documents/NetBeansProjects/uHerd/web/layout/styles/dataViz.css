@@ -1,0 +1,18 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 23-Jan-2016, 10:15:40
+    Author     : asus
+*/
+
+div.bar {
+    display: inline-block;
+    width: 20px;
+    height: 75px;   /* We'll override this later */
+    background-color: teal;
+    margin-right: 2px;
+}
+

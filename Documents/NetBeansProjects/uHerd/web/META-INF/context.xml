@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context antiJARLocking="true" path="/uHerd">
+  <Resource name="jdbc/livestockmanager" auth="Container" 
+            driverClassName="com.mysql.jdbc.Driver" logAbandoned="true"
+            maxActive="100" maxIdle="30" maxWait="10000"  
+            username="b20bedda434ebe" password="37566c63" 
+            removeAbandoned="true" removeAbandonedTimeout="60"
+            digest = "SHA-1" 
+            type="javax.sql.DataSource" 
+            url="jdbc:mysql://br-cdbr-azure-south-a.cloudapp.net:3306/livestockmanager?zeroDateTimeBehavior=convertToNull" />
+  
+  <Realm className="org.apache.catalina.realm.DataSourceRealm" dataSourceName="jdbc/livestockmanager" 
+         debug="99" localDataSource="true" roleNameCol="role" userCredCol="password" 
+         digest = "SHA-1"
+         userNameCol="userName" userRoleTable="userrole" userTable="users"/>
+  
+</Context>
